@@ -1,1 +1,4 @@
-FROM hello-world:latest
+FROM tomcat:jdk8-openjdk 
+LABEL "team"="Store SSC-B"
+RUN cd webapps/ && wget https://referenceappkhaja.s3-us-west-2.amazonaws.com/gameoflife.war
+EXPOSE 8080
