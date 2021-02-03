@@ -1,4 +1,4 @@
 FROM tomcat:jdk8-openjdk 
 LABEL "team"="Store SSC-B"
 RUN cd webapps/ && wget https://referenceappkhaja.s3-us-west-2.amazonaws.com/gameoflife.war
-EXPOSE 32769
+EXPOSE 8080
